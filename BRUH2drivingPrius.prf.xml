@@ -1,0 +1,317 @@
+<TaskerData sr="" dvi="1" tv="4.8u1m">
+	<Profile sr="prof223" ve="2">
+		<cdate>1452319278110</cdate>
+		<edate>1458850233809</edate>
+		<id>223</id>
+		<mid0>99</mid0>
+		<mid1>220</mid1>
+		<nme>BRUH2drivingPrius</nme>
+		<State sr="con0" ve="2">
+			<code>3</code>
+			<Str sr="arg0" ve="3">HANDS FREE</Str>
+			<Str sr="arg1" ve="3"/>
+		</State>
+	</Profile>
+	<Task sr="task220">
+		<cdate>1450130443239</cdate>
+		<edate>1458849617358</edate>
+		<id>220</id>
+		<nme>BRUH2drivingend</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">BRUH2SendETA(OFF)</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%ETAlate</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%Eta4</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>116</code>
+			<Str sr="arg0" ve="3">https://YOURNAME.duckdns.org:443/api/states/sensor.destination_ben?api_password=YOUR_PASSWORD</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">{"state":"standby", "attributes": {"friendly_name": " Ben's Destination"}}</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3">application/json</Str>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%DeviceName</lhs>
+					<op>2</op>
+					<rhs>ben</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>116</code>
+			<Str sr="arg0" ve="3">https://YOURNAME.duckdns.org:443/api/states/sensor.destination_cailin?api_password=YOUR_PASSWORD</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">{"state":"standby", "attributes": {"friendly_name": " Cailin's Destination"}}</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3">application/json</Str>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%DeviceName</lhs>
+					<op>2</op>
+					<rhs>cailin</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>116</code>
+			<Str sr="arg0" ve="3">https://YOURNAME.duckdns.org:443/api/states/sensor.eta_ben?api_password=YOUR_PASSWORD</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">{"state":"standby", "attributes": {"friendly_name": " Ben's ETA"}}</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3">application/json</Str>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%DeviceName</lhs>
+					<op>2</op>
+					<rhs>ben</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>116</code>
+			<Str sr="arg0" ve="3">https://YOURNAME.duckdns.org:443/api/states/sensor.eta_cailin?api_password=YOUR_PASSWORD</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">{"state":"standby", "attributes": {"friendly_name": " Cailin's ETA"}}</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3">application/json</Str>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%DeviceName</lhs>
+					<op>2</op>
+					<rhs>cailin</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>116</code>
+			<Str sr="arg0" ve="3">https://YOURNAME.duckdns.org:443/api/services/input_select/select_option?api_password=YOUR_PASSWORD</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">{"entity_id":"input_select.ben_status",
+"option":"standby" }</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3">application/json</Str>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%DeviceName</lhs>
+					<op>2</op>
+					<rhs>ben</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>116</code>
+			<Str sr="arg0" ve="3">https://YOURNAME.duckdns.org:443/api/services/input_select/select_option?api_password=YOUR_PASSWORD</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">{"entity_id":"input_select.cailin_status",
+"option":"standby" }</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3">application/json</Str>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%DeviceName</lhs>
+					<op>2</op>
+					<rhs>cailin</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%ETAcurrent</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%Eta3</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%Eta</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%Eta1</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%Eta2</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%Eta4chop</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%ETAsent</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%Destination</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task99">
+		<cdate>1450130313233</cdate>
+		<edate>1458850233809</edate>
+		<id>99</id>
+		<nme>BRUH2drivingprius</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>310</code>
+			<Int sr="arg0" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>308</code>
+			<Int sr="arg0" val="15"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">BRUH2SendETA(OFF)</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>304</code>
+			<Int sr="arg0" val="15"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>303</code>
+			<Int sr="arg0" val="15"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>305</code>
+			<Int sr="arg0" val="15"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>307</code>
+			<Int sr="arg0" val="15"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>116</code>
+			<Str sr="arg0" ve="3">https://YOURNAME.duckdns.org:443/api/states/sensor.car_driving_ben?api_password=YOUR_PASSWORD</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">{"state":"Prius", "attributes": {"friendly_name": "Car Ben is Driving"}}</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3">application/json</Str>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%DeviceName</lhs>
+					<op>2</op>
+					<rhs>ben</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>116</code>
+			<Str sr="arg0" ve="3">https://YOURNAME.duckdns.org:443/api/states/sensor.car_driving_cailin?api_password=YOUR_PASSWORD</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">{"state":"Prius", "attributes": {"friendly_name": "Car Cailin is Driving"}}</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3">application/json</Str>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%DeviceName</lhs>
+					<op>2</op>
+					<rhs>cailin</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>116</code>
+			<Str sr="arg0" ve="3">https://YOURNAME.duckdns.org:443/api/services/input_select/select_option?api_password=YOUR_PASSWORD</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">{"entity_id":"input_select.ben_status",
+"option":"driving" }</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3">application/json</Str>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%DeviceName</lhs>
+					<op>2</op>
+					<rhs>ben</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>116</code>
+			<Str sr="arg0" ve="3">https://YOURNAME.duckdns.org:443/api/services/input_select/select_option?api_password=YOUR_PASSWORD</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">{"entity_id":"input_select.cailin_status",
+"option":"driving" }</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3">application/json</Str>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%DeviceName</lhs>
+					<op>2</op>
+					<rhs>cailin</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+</TaskerData>

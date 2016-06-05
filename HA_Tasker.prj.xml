@@ -1,0 +1,154 @@
+<TaskerData sr="" dvi="1" tv="4.8u4m">
+	<Profile sr="prof81" ve="2">
+		<cdate>1465074354650</cdate>
+		<clp>true</clp>
+		<edate>1465089277893</edate>
+		<id>81</id>
+		<limit>true</limit>
+		<mid0>57</mid0>
+		<nme>LightOff</nme>
+		<Event sr="con0" ve="2">
+			<code>3001</code>
+			<pri>0</pri>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="2"/>
+			<Int sr="arg2" val="2"/>
+		</Event>
+	</Profile>
+	<Profile sr="prof82" ve="2">
+		<cdate>1465074354657</cdate>
+		<clp>true</clp>
+		<edate>1465075816413</edate>
+		<id>82</id>
+		<limit>true</limit>
+		<mid0>55</mid0>
+		<nme>LightOn</nme>
+		<Event sr="con0" ve="2">
+			<code>3001</code>
+			<pri>0</pri>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="2"/>
+			<Int sr="arg2" val="2"/>
+		</Event>
+	</Profile>
+	<Profile sr="prof83" ve="2">
+		<cdate>1465074354668</cdate>
+		<edate>1465089270908</edate>
+		<id>83</id>
+		<limit>true</limit>
+		<mid0>61</mid0>
+		<nme>BatterySend</nme>
+		<Time sr="con0">
+			<fh>-1</fh>
+			<fm>-1</fm>
+			<rep>2</rep>
+			<repval>15</repval>
+			<th>-1</th>
+			<tm>-1</tm>
+		</Time>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1464925835979</cdate>
+		<name>HA Tasker</name>
+		<pids>81,82,83</pids>
+		<psort>Alpha</psort>
+		<tids>57,80,55,61</tids>
+	</Project>
+	<Task sr="task55">
+		<cdate>1464926461385</cdate>
+		<edate>1465139409484</edate>
+		<id>55</id>
+		<nme>LightOn</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="2480"/>
+			<Int sr="arg1" val="200"/>
+			<Int sr="arg2" val="50"/>
+			<Int sr="arg3" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>116</code>
+			<Str sr="arg0" ve="3">https://your.ha.ip.address:8123/api/services/light/turn_on?api_password=YourPassword</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">{"entity_id":"light.yourlight","brightness":"255","rgb_color":[255,0,255]}</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3">application/json</Str>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task57">
+		<cdate>1464926461385</cdate>
+		<edate>1465139412389</edate>
+		<id>57</id>
+		<nme>LightOff</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="1880"/>
+			<Int sr="arg1" val="200"/>
+			<Int sr="arg2" val="50"/>
+			<Int sr="arg3" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>116</code>
+			<Str sr="arg0" ve="3">https://your.ha.ip.address:8123/api/services/light/turn_off?api_password=YourPassword</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">{"entity_id":"light.yourlight"}</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3">application/json</Str>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task61">
+		<cdate>1465072939598</cdate>
+		<edate>1465139414120</edate>
+		<id>61</id>
+		<nme>SensorSend</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>116</code>
+			<Str sr="arg0" ve="3">http://your.ha.ip.address:8123/api/states/sensor.phonebatt?api_password=YourPassword</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">{"state":"%BATT", "attributes": {"friendly_name": "Phone Battery", "icon":"mdi:watch","unit_of_measurement":"%"}}</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3">application/json</Str>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task80">
+		<cdate>1459746743279</cdate>
+		<edate>1465139411106</edate>
+		<id>80</id>
+		<nme>StartScript</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="3076"/>
+			<Int sr="arg1" val="200"/>
+			<Int sr="arg2" val="50"/>
+			<Int sr="arg3" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>116</code>
+			<Str sr="arg0" ve="3">https://your.ha.ip.address:8123/api/services/script/scriptname?api_password=YourPassword</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3">application/json</Str>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
